@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <link rel="stylesheet" href="anagrafica.css">
+
+
+
+  </head>
+<body onload="info()">
+
+<div>
+    <p>Nome:<span id="nome"></span></p>
+    <p>Cognome:<span id="cognome"></span></p>
+    <p>Sesso:<span id="sesso"></span></p>
+    <p>Email:<span id="email"></span></p>
+    <p>Indirizzo(Tipo):<span id="indirizzoTipo"></span></p>
+    <p>Indirizzo:<span id="indirizzo"></span></p>
+    <p>Numero civico:<span id="numeroCivico"></span></p>
+    <p>Città:<span id="citta"></span></p>
+    <p>Provincia:<span id="provinciaa"></span></p>
+    <p>Cap:<span id="cap"></span></p>
+    <p>Nazione:<span id="nazione"></span></p>
+    <p>Sport praticati:<span id="calcio"></span> <span id="nuoto"></span> <span id="palestra"></span> <span id="tennis"></span> <span id="basket"></span> <span id="danza"></span> <span id="pallavolo"></span> <span id="equitazione"></span> <span id="rugby"></span> <span id="baseball"></span> <span id="golf"></span> <span id="atletica"></span></p>
+    <p>Generi Film preferiti:<span id="generi"></span></p>
+    <p>Password:<span id="password"></span></p>
+
+</div>
+
+<script>
+    function info()
+    {
+        document.getElementById("nome").innerHTML=localStorage.getItem("nome");
+        document.getElementById("cognome").innerHTML=localStorage.getItem("cognome");
+        document.getElementById("sesso").innerHTML=localStorage.getItem("sesso");
+        document.getElementById("email").innerHTML=localStorage.getItem("email");
+        document.getElementById("indirizzoTipo").innerHTML=localStorage.getItem("indirizzoTipo");
+        document.getElementById("indirizzo").innerHTML=localStorage.getItem("indirizzo");
+        document.getElementById("numeroCivico").innerHTML=localStorage.getItem("numeroCivico");
+        document.getElementById("citta").innerHTML=localStorage.getItem("citta");
+        document.getElementById("provinciaa").innerHTML=localStorage.getItem("provincia");
+        document.getElementById("cap").innerHTML=localStorage.getItem("cap");
+        document.getElementById("nazione").innerHTML=localStorage.getItem("nazione");
+
+        if(localStorage.getItem("calcio")!== undefined|localStorage.getItem("calcio")!==null){
+        document.getElementById("calcio").innerHTML=localStorage.getItem("calcio");
+        }
+        if(localStorage.getItem("nuoto")!== undefined|localStorage.getItem("nuoto")!==null){
+        document.getElementById("nuoto").innerHTML=localStorage.getItem("nuoto");
+        }
+        if(localStorage.getItem("palestra")!== undefined|localStorage.getItem("palestra")!==null){
+        document.getElementById("palestra").innerHTML=localStorage.getItem("palestra");
+        }
+        if(localStorage.getItem("tennis")!== undefined|localStorage.getItem("tennis")!==null){
+        document.getElementById("tennis").innerHTML=localStorage.getItem("tennis");
+        }
+        if(localStorage.getItem("basket")!== undefined|localStorage.getItem("basket")!==null){
+        document.getElementById("basket").innerHTML=localStorage.getItem("basket");
+        }
+        if(localStorage.getItem("danza")!== undefined|localStorage.getItem("danza")!==null){
+        document.getElementById("danza").innerHTML=localStorage.getItem("danza");
+        }
+        if(localStorage.getItem("pallavolo")!== undefined|localStorage.getItem("pallavolo")!==null){
+        document.getElementById("pallavolo").innerHTML=localStorage.getItem("pallavolo");
+        }
+        if(localStorage.getItem("equitazione")!== undefined|localStorage.getItem("equitazione")!==null){
+        document.getElementById("equitazione").innerHTML=localStorage.getItem("equitazione");
+        }
+        if(localStorage.getItem("rugby")!== undefined|localStorage.getItem("rugby")!==null){
+        document.getElementById("rugby").innerHTML=localStorage.getItem("rugby");
+        }
+        if(localStorage.getItem("baseball")!== undefined|localStorage.getItem("baseball")!==null){
+        document.getElementById("baseball").innerHTML=localStorage.getItem("baseball");
+        }
+        if(localStorage.getItem("golf")!== undefined|localStorage.getItem("golf")!==null){
+        document.getElementById("golf").innerHTML=localStorage.getItem("golf");
+        }
+        if(localStorage.getItem("atletica")!== undefined|localStorage.getItem("atletica")!==null){
+        document.getElementById("atletica").innerHTML=localStorage.getItem("atletica");
+        }
+
+        document.getElementById("generi").innerHTML=localStorage.getItem("film");
+        document.getElementById("password").innerHTML=localStorage.getItem("password");
+    }
+    </script>
+</body>
+</html>
